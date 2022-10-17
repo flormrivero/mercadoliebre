@@ -45,7 +45,7 @@
   <body>
     <form action="/" method="POST">
     <div>
-        <label>Apellido y nombre:</label>
+        <label>Nombre y apellido:</label>
         <input type="text" name="nombre" required>
     </div>
     <div>
@@ -65,13 +65,13 @@
         <input type="radio" name="perfil" value="comprar"> Comprar
         <input type="radio" name="perfil" value="vender"> Vender
     </div>
-    <div>
+    <div class="categorias">
         <label>Categorías de interés:</label>
-        <input type="checkbox" name="categorias" value="electro"> Electro
-        <input type="checkbox" name="categorias" value="moda"> Moda
-        <input type="checkbox" name="categorias" value="hogar"> Hogar
-        <input type="checkbox" name="categorias" value="jugueteria"> Juguetería
-        <input type="checkbox" name="categorias" value="vidaSana"> Vida sana
+        <div><input type="checkbox" name="categorias" value="electro"> Electro</div>
+        <div><input type="checkbox" name="categorias" value="moda"> Moda</div>
+        <div><input type="checkbox" name="categorias" value="hogar">Hogar</div>
+        <div><input type="checkbox" name="categorias" value="jugueteria"> Juguetería</div>
+        <div><input type="checkbox" name="categorias" value="vidaSana"> Vida sana</div>
     </div>
     <div>
         <label>Foto de usuario:</label>
@@ -85,11 +85,12 @@
         <label>Confirmar contraseña:</label>
         <input type="password" name="password" id="confirmPassword" placeholder= "Reingrese su contraseña" required>
     </div>
-    <div>
+    <div class="button-register">
         <button type="submit">Enviar</button>
         <button type="reset">Borrar</button>
     </div>
     </form>
+    <br>
   <footer>
     <section>
         <ul>
