@@ -163,10 +163,36 @@ footer {
 }
 form {
     background-color: #ebebeb;
-    width: 70%;
+    width: 100%;
     justify-content: center;
-    line-height: 15px;
+    line-height: 50px;
+    padding: 30px;
+    display: grid;
 }
+button {
+    display: flow-root;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #ebebeb;
+    width: 80px;
+    height: 40px;
+}
+button:hover {
+    background-color: #03264C;
+    color: #ebebeb
+}
+.categorias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+.button-register {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 361px) {
     .descripciones {
         display: none;
