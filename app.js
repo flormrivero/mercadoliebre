@@ -7,13 +7,13 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(express.static(publicFolder));
 
-const app_port=3412;
+const app_port=1234;
 app.listen(app_port, () => {
     console.log('Servidor funcionando')
 })
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("views/login.html"))
+    res.sendFile(path.resolve("views/home.html"))
 })
 app.get("/registro", (req, res) => {
     res.sendFile(path.resolve("views/register.html"))
