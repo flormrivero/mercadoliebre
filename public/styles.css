@@ -56,6 +56,10 @@ body {
 }
 section {
     line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
    
 p {
@@ -217,6 +221,9 @@ button:hover {
     .descripciones {
         display: none;
     }
+    article {
+        width: 100%;
+    }
     nav {
         display: none;
     }
@@ -285,6 +292,7 @@ button:hover {
         position: relative;
         cursor: pointer ;
         transition: all 0,5s infinite;
+    
     }
     article:hover {
         box-shadow: 3px 3px 3px rgb(56, 54, 54);
